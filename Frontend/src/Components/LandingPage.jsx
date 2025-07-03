@@ -2,18 +2,19 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Hero from "./Hero";
 import Industries from "./Industries";
-import PrebuiltButtons from "./PrebuiltButtons";
 import CustomButtons from "./CustomButtons";
-import "./LandingPage.css"; // Ensure this file includes the relevant CSS
+import PrebuiltButtons from "./PrebuiltButtons"; 
+import CustomPage from "../pages/CustomPage"; 
+import PrebuiltPage from "../pages/PrebuiltPage"; 
+import "./LandingPage.css"; 
 
 const LandingPage = () => {
   return (
     <div className="landing-page">
-      {/* Main Content */}
       <Routes>
-      <Route path="/" element={<Home />} />
-          <Route path="/custom" element={<CustomPage />} />
-          <Route path="/prebuilt" element={<PrebuiltPage />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/custom" element={<CustomPage />} />
+        <Route path="/prebuilt" element={<PrebuiltPage />} />
       </Routes>
     </div>
   );
@@ -21,12 +22,10 @@ const LandingPage = () => {
 
 const Home = () => (
   <div className="home">
-    {/* Hero Section */}
     <div className="hero">
       <Hero />
       <Industries />
     </div>
-
 
     <div className="solutions">
       <h1>
@@ -127,49 +126,12 @@ const Home = () => (
           </p>
         </div>
       </div>
-      {/* Button Links */}
+
       <div className="buttons">
-        <Link to="/custom" className="btn custom-btn">
-          Custom
-        </Link>
-        <Link to="/prebuilt" className="btn prebuilt-btn">
-          Pre-built
-        </Link>
+        <CustomButtons />
+        <PrebuiltButtons />
       </div>
     </div>
-  </div>
-);
-const CustomPage = () => (
-  <div>
-    <Custom />
-  </div>
-);
-
-const PrebuiltPage = () => (
-  <div>
-    <Prebuilt />
-  </div>
-);
-
-const Custom = () => (
-  <div className="page">
-    <h1>Custom Solutions</h1>
-    <p>
-      Here you can explore custom solutions tailored to your industry needs.
-    </p>
-    {/* <Link to="/" className="btn">
-      Back to Home
-    </Link> */}
-  </div>
-);
-
-const Prebuilt = () => (
-  <div className="page">
-    <h1>Pre-built Solutions</h1>
-    <p>Here you can explore pre-built solutions for quick deployment.</p>
-    {/* <Link to="/" className="btn">
-      Back to Home
-    </Link> */}
   </div>
 );
 

@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './PrebuiltPage.css'; 
+import './PrebuiltPage.css';
+
 const PrebuiltPage = () => {
   const prebuiltSystems = [
     {
       title: "Basic System",
       description: "A straightforward solution for small-scale industries aiming for foundational automation.",
-      imageUrl:"https://www.romexsoft.com/wp-content/uploads/2022/07/Cloud-Based-Solutions-1280x960-1.jpeg", 
+      imageUrl: "https://www.romexsoft.com/wp-content/uploads/2022/07/Cloud-Based-Solutions-1280x960-1.jpeg",
     },
     {
       title: "Intermediate System",
@@ -26,8 +27,59 @@ const PrebuiltPage = () => {
   ];
 
   return (
-    <div className="prebuilt-page">
+    <div className="prebuilt-page fade-in">
       <h1 className='h1-tag'>Pre-built Solutions</h1>
+
+      <div className="comparison-table">
+        <table>
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Basic</th>
+              <th>Intermediate</th>
+              <th>Advanced</th>
+              <th>Fully Automated</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>AI Automation</td>
+              <td>❌</td>
+              <td>✅</td>
+              <td>✅</td>
+              <td>✅</td>
+            </tr>
+            <tr>
+              <td>Cloud Integration</td>
+              <td>❌</td>
+              <td>✅</td>
+              <td>✅</td>
+              <td>✅</td>
+            </tr>
+            <tr>
+              <td>SMS Alerts</td>
+              <td>✅</td>
+              <td>✅</td>
+              <td>✅</td>
+              <td>✅</td>
+            </tr>
+            <tr>
+              <td>Insurance System</td>
+              <td>❌</td>
+              <td>❌</td>
+              <td>✅</td>
+              <td>✅</td>
+            </tr>
+            <tr>
+              <td>Complete Automation</td>
+              <td>❌</td>
+              <td>❌</td>
+              <td>❌</td>
+              <td>✅</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
       <div className="prebuilt-grid">
         {prebuiltSystems.map((system, index) => (
@@ -42,7 +94,9 @@ const PrebuiltPage = () => {
         ))}
       </div>
 
-      <Link to="/" className="btn back-btn">Back to Home</Link>
+      <div className="back-btn-wrapper">
+        <Link to="/" className="btn back-btn">Back to Home</Link>
+      </div>
     </div>
   );
 };

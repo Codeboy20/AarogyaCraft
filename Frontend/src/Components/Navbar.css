@@ -1,222 +1,307 @@
-/* Navbar Styling */
-/* Navbar Styling */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 40px; /* Explicitly set the navbar height */
-    padding: 10px 20px;
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
-    font-family: Arial, Helvetica, sans-serif;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a soft shadow under the navbar */
-     /* Prevents content from spilling out of the navbar */
-  }
-  
-  /* Logo Image Styling */
-  .logo {
-    display: flex;
-    align-items: center;
-    height: 100%; /* Ensure the logo container uses the full navbar height */
-    font-size: 1.9rem;
-    font-weight: bold;
-    color: #1a73e8;
-    
-  }
-  
-  .logo img {
-    max-height: 130%; /* Constrain the logo's height to the navbar height */
-    width: auto; /* Maintain the aspect ratio */
-  }
-  
-    
-    
-    .nav-links {
-      display: flex;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-    
-    .nav-links li {
-      position: relative;
-      margin: 0 15px;
-      font-size: 17px;
-      color: #1a73e8;
-      cursor: pointer;
-    }
-    
-    
-    .nav-links a {
-      text-decoration: none;
-      color: #1a73e8;
-      transition: color 0.3s;
-    }
-    
-    .nav-links a:hover {
-      color: #0047ab;
-    }
-    
-    /* Dropdown Icon Styling */
-    .dropdown-icon {
-      font-size: 12px;
-      margin-left: 5px;
-    }
-    
-    /* Expertizes Dropdown Styling */
-    .dropdown {
-      position: relative;
-    }
-    
-    .expertizes-dropdown-menu {
-      position: absolute;
-      top: 120%; /* Position dropdown below the navbar */
-      left: 50%; /* Center align below the Expertizes link */
-      transform: translateX(-50%); /* Centering adjustment */
-      display: flex;
-      flex-wrap: wrap; /* Makes items display side-by-side */
-      gap: 15px; /* Space between items */
-      padding: 15px;
-      background-color: #fff;
-      border: 1px solid #ddd;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      width: 350px; /* Wider dropdown */
-      z-index: 10;
-    }
-    
-    .expertize-item {
-      font-size: 16px;
-      padding: 10px;
-      cursor: pointer;
-      border-radius: 4px;
-      transition: background-color 0.3s;
-    }
-    
-    .expertize-item:hover {
-      background-color: #f0f0f0;
-    }
-    
-    /* Languages Section - Black Color */
-    .language-dropdown {
-      display: flex;
-      align-items: center;
-      gap: 5px;
-      padding: 8px 15px;
-      background-color: #fff;
-      color: #000; /* Black color for Languages button */
-      border: 1px solid #ccc; /* Light border for language button */
-      border-radius: 5px;
-      font-size: 16px;
-      cursor: pointer;
-      transition: background-color 0.3s, color 0.3s;
-    }
-    
-    .language-dropdown:hover {
-      background-color: #e6f0ff; /* Light blue on hover */
-      border-color: #0047ab;
-    }
-    
-    .dropdown-menu {
-      position: absolute;
-      top: 120%;
-      left: 0;
-      background-color: #fff;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      border: 1px solid #ddd;
-      list-style: none;
-      padding: 10px 0;
-      margin: 0;
-      z-index: 10;
-    }
-    
-    .dropdown-menu li {
-      padding: 10px 15px;
-      font-size: 16px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-      color: #000;
-    }
-    
-    .dropdown-menu li:hover {
-      background-color: #f0f0f0;
-    }
-    
-    /* Ensures links and button align in the same line */
-    .nav-links li,
-    .language-dropdown {
-      display: flex;
-      align-items: center;
-    }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-   Default Styles for Navbar
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 1.9rem;
+  font-weight: bold;
+  color: #0b3d91;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 15px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #0b3d91;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #0047ab;
+}
+
+.dropdown-icon {
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.exper{
+  color: #0b3d91;
+}
+
+.expertizes-dropdown-menu {
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  background: #fff;
+  padding: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.expertize-item {
+  padding: 8px;
+  font-size: 15px;
+  border-radius: 4px;
+}
+
+.expertize-item:hover {
+  background: #f0f0f0;
+}
+
+.language-dropdown {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.language-container{
+  color: #0b3d91;
+}
+
+.language-dropdown:hover {
+  background: #e6f0ff;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 7%;
+  right: 11%;
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  list-style: none;
+  padding: 5px 0;
+  z-index: 10;
+}
+
+.dropdown-menu li {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+  background: #f0f0f0;
+}
+
+.aarogya-login-button {
+  padding: 10px 22px;
+  background-color: #0b3d91;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.aarogya-login-button:hover {
+  background-color: #4d90fe;
+  transform: translateY(-2px);
+}
+
+.aarogya-username {
+  font-size: 15px;
+  color: #333;
+  cursor: pointer;
+  position: relative;
+}
+
+.user-options {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: #fff;
+  border: 1px solid #ddd;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 10;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.user-options li {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.user-options li:hover {
+  background: #f0f0f0;
+}
+
+.blurred {
+  filter: blur(4px);
+  pointer-events: none;
+}
+
+.aarogya-login-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.2);
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.aarogya-login-form {
+  background: #fff;
+  padding: 30px 30px 60px 30px;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  width: 420px;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #333;
+}
+
+.close-button:hover {
+  color: #0b3d91;
+}
+
+.aarogya-login-form h2 {
+  text-align: center;
+  color: #0b3d91;
+  margin-bottom: 30px;
+}
+
+.aarogya-login-input {
+  width: 95%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.aarogya-login-submit {
+  width: 100%;
+  padding: 10px;
+  background-color: #0b3d91;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.aarogya-login-toggle {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.aarogya-login-toggle span {
+  color: #0b3d91;
+  cursor: pointer;
+}
+
+.aarogya-login-social {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 30px;
+}
+
+.aarogya-social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid #555;
+  background: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.aarogya-social-button img {
+  width: 20px;
+  height: 20px;
+}
+
+.password-requirement {
+  font-size: 12px;
+  color: red;
+  margin-bottom: 5px;
+}
+
+
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .hamburger { display: block; }
+
   .nav-links {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    justify-content: flex-end; /* Default alignment */
-    align-items: center;
-  }
-  
-  /* Hamburger Icon */
-  .hamburger {
     display: none;
-    font-size: 24px;
-    cursor: pointer;
-    color: #000;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   }
-  
-  /* Responsive Styles */
-  @media (max-width: 768px) {
-    /* Display Hamburger Icon */
-    .hamburger {
-      display: block;
-    }
-  
-    /* Nav Links for Mobile */
-    .nav-links {
-      display: none; /* Hidden by default */
-      flex-direction: column;
-      align-items: center; /* Center all items */
-      justify-content: center; /* Center vertically */
-      position: absolute;
-      top: 60px; /* Below the navbar */
-      right: 0;
-      background-color: #fff;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      width: 100%;
-      padding: 20px 0;
-      z-index: 10;
-    }
-  
-    .nav-links.show {
-      display: flex; /* Show menu when toggled */
-    }
-  
-    /* Center all list items */
-    .nav-links li {
-      margin: 10px 0; /* Spacing between items */
-      text-align: center;
-      width: 100%; /* Take full width for consistent alignment */
-    }
-  
-    /* Dropdown Adjustments */
-    .expertizes-dropdown-menu,
-    .dropdown-menu {
-      position: static;
-      transform: none;
-      width: auto;
-      text-align: center; /* Center dropdown items */
-    }
+
+  .nav-links.show {
+    display: flex;
   }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .expertizes-dropdown-menu,
+  .dropdown-menu {
+    position: static;
+    transform: none;
+  }
+}

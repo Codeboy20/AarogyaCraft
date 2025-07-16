@@ -1,22 +1,24 @@
 
   .simplify {
-    color: black; /* Red-Orange color for 'Simplify' */
+    color: #00ffc8; 
     font-weight: bold;
-    font-size: 3rem; /* Adjust the size as needed */
+    font-size: 3rem; 
   }
   
   .optimize {
-    color: black; /* Light Blue color for 'Optimize' */
+    color: #00ffc8; 
     font-weight: bold;
-    font-size: 3rem; /* Adjust the size as needed */
+    font-size: 3rem; 
     
   }
   
   .transform {
-    color: black; /* Green color for 'Transform' */
+    color: #00ffc8; 
     font-weight: bold;
-    font-size: 3rem; /* Adjust the size as needed */
+    font-size: 3rem; 
   }
+
+  /* #0b3d91 */
 
 
   .hero-description{
@@ -28,6 +30,7 @@
     width: 100%;
     height: 3rem;
 }
+
 
   
 

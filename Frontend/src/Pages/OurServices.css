@@ -76,7 +76,7 @@
 }
 
 .CARD:hover h2, .card1:hover h2 {
-    color: #007bff;
+    color: #0b3d91;
 }
 
 /* Card Text */
@@ -113,7 +113,7 @@
     transform: translateX(-10px);
     animation: fadeIn 0.5s ease forwards;
     animation-delay: calc(0.2s * var(--i));
-    background-color: #0073e6;
+    background-color: #0b3d91;
     color: white;
     padding: 10px 15px;
     border-radius: 10px;
@@ -156,7 +156,7 @@
 
 /* Contact Page Styling */
 .contact-page {
-  color: #007bff;
+  color: #0b3d91;
   padding: 20px;
   text-align: center;
   font-family: 'Poppins', sans-serif;
@@ -185,7 +185,7 @@
 label {
   font-size: 16px;
   font-weight: bold;
-  color: #007bff;
+  color: #0b3d91;
 }
 
 input,
@@ -208,7 +208,7 @@ textarea {
 button.submit-btn {
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #007bff;
+  background-color: #0b3d91;
   color: white;
   border: none;
   border-radius: 4px;
@@ -220,7 +220,7 @@ button.submit-btn {
 }
 
 button.submit-btn:hover {
-  background-color: #00509e;
+  background-color: #0b3d91;
   transform: scale(1.05);
 }
 
@@ -271,6 +271,6 @@ button.submit-btn:hover {
     text-align: center;
     font-size: 1.5em;
     margin-top: 20px;
-    color: #0073e6;
+    color: #0b3d91;
     font-family: 'Arial', sans-serif;
 }

@@ -53,8 +53,6 @@ const Hero = () => {
           src={aniVideo}
           autoPlay
           loop
-          muted
-          controls
         />
       </div>
     </div>

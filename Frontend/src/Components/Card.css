@@ -59,7 +59,7 @@
 
 /* Hover effect on title */
 .card:hover .card-title {
-    color: #007bff;
+    color: #0b3d91;
 }
 
 /* Card Text */
@@ -97,7 +97,7 @@
     transform: translateX(-10px);
     animation: fadeIn 0.5s ease forwards;
     animation-delay: calc(0.2s * var(--i));
-    background-color: #0073e6;
+    background-color: #0b3d91;
     color: white;
     padding: 10px 15px;
     border-radius: 10px;
